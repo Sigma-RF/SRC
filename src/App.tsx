@@ -1,10 +1,17 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import { Github, Linkedin, Youtube, Mail, Phone, ChevronRight, Microscope, BookOpen, Lightbulb, Users, Calendar, GraduationCap, UserPlus } from 'lucide-react';
+import { Github, Linkedin, Youtube, Mail, Phone, ChevronRight, Microscope } from 'lucide-react';
 import Home from './pages/Home';
-import Login from './pages/Login';
-import Register from './pages/Register';
-import Dashboard from './pages/Dashboard';
+import Research from './pages/Research';
+import Publications from './pages/Publications';
+import Team from './pages/Team';
+import Services from './pages/Services';
+import Projects from './pages/Projects';
+import Apply from './pages/Apply';
+import Events from './pages/Events';
+import Contact from './pages/Contact';
+import InternProgram from './pages/events/InternProgram';
+import Workshop from './pages/events/Workshop';
 
 function App() {
   return (
@@ -17,30 +24,35 @@ function App() {
               <span className="text-2xl font-bold text-gray-900">Sigma Research</span>
             </Link>
             <div className="flex space-x-6">
-              <a href="#services" className="text-gray-600 hover:text-blue-600">Services</a>
-              <a href="#events" className="text-gray-600 hover:text-blue-600">Events</a>
-              <a href="#contact" className="text-gray-600 hover:text-blue-600">Contact</a>
-              <div className="flex items-center space-x-4">
-              <div className="flex items-center bg-white border border-blue-500 rounded-full shadow-sm overflow-hidden">
-                <button className="px-4 py-2 text-sm text-blue-600 hover:bg-blue-50 transition">
-                  Login
-                </button>
-                <div className="w-px h-6 bg-blue-500"></div>
-                <button className="px-4 py-2 text-sm text-white bg-blue-600 hover:bg-blue-700 rounded-r-full transition">
-                  Register
-                </button>
-              </div>
-            </div>
-
+              <Link to="/research" className="text-gray-600 hover:text-blue-600">Research</Link>
+              <Link to="/services" className="text-gray-600 hover:text-blue-600">Services</Link>
+              <Link to="/projects" className="text-gray-600 hover:text-blue-600">Projects</Link>
+              <Link to="/events" className="text-gray-600 hover:text-blue-600">Events</Link>
+              <Link to="/publications" className="text-gray-600 hover:text-blue-600">Publications</Link>
+              <Link to="/team" className="text-gray-600 hover:text-blue-600">Team</Link>
+              <Link to="/contact" className="text-gray-600 hover:text-blue-600">Contact</Link>
+              <Link 
+                to="/apply"
+                className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 py-2 rounded-xl hover:from-blue-700 hover:to-blue-800 transition-all duration-300 shadow-lg hover:shadow-xl"
+              >
+                Apply Now
+              </Link>
             </div>
           </nav>
         </header>
 
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} />
-          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/research" element={<Research />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/events" element={<Events />} />
+          <Route path="/events/intern-program" element={<InternProgram />} />
+          <Route path="/events/workshop" element={<Workshop />} />
+          <Route path="/publications" element={<Publications />} />
+          <Route path="/team" element={<Team />} />
+          <Route path="/apply" element={<Apply />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
 
         <footer className="bg-gray-900 text-white py-12">
@@ -51,9 +63,6 @@ function App() {
                   <Microscope className="h-8 w-8" />
                   <span className="text-2xl font-bold">Sigma Research</span>
                 </div>
-                <p className="text-gray-400">
-                  Proudly built by Mukarram and powered by Bolt.new
-                </p>
               </div>
               <div className="flex justify-start md:justify-end space-x-6">
                 <a href="#" className="text-gray-400 hover:text-white">
@@ -72,6 +81,9 @@ function App() {
                   <Phone className="h-6 w-6" />
                 </a>
               </div>
+            </div>
+            <div className="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400">
+              <p>Developed by MUKARRAM T BAMBOT</p>
             </div>
           </div>
         </footer>

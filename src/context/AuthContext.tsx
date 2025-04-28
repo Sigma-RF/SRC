@@ -1,6 +1,7 @@
-import React, { createContext, useContext, useState, useEffect } from 'react';
+import React, { createContext, useState, useContext } from 'react';
 
 interface User {
+  id: string;
   email: string;
 }
 
@@ -8,37 +9,39 @@ interface AuthContextType {
   user: User | null;
   signIn: (email: string, password: string) => Promise<void>;
   signUp: (email: string, password: string) => Promise<void>;
-  signOut: () => Promise<void>;
+  signOut: () => void;
 }
 
-const AuthContext = createContext<AuthContextType | undefined>(undefined);
+const AuthContext = createContext<AuthContextType>({
+  user: null,
+  signIn: async () => {},
+  signUp: async () => {},
+  signOut: () => {},
+});
 
 export function AuthProvider({ children }: { children: React.ReactNode }) {
   const [user, setUser] = useState<User | null>(null);
 
-  useEffect(() => {
-    // Load user from localStorage (mock persistence)
-    const storedUser = localStorage.getItem('user');
-    if (storedUser) setUser(JSON.parse(storedUser));
-  }, []);
-
   const signIn = async (email: string, password: string) => {
-    // Dummy auth logic (replace with API later)
+    // Mock authentication
     if (email && password) {
-      const mockUser = { email };
-      setUser(mockUser);
-      localStorage.setItem('user', JSON.stringify(mockUser));
+      setUser({ id: '1', email });
+    } else {
+      throw new Error('Invalid credentials');
     }
   };
 
   const signUp = async (email: string, password: string) => {
-    // You can replace this with backend API call later
-    await signIn(email, password);
+    // Mock registration
+    if (email && password) {
+      setUser({ id: '1', email });
+    } else {
+      throw new Error('Invalid credentials');
+    }
   };
 
-  const signOut = async () => {
+  const signOut = () => {
     setUser(null);
-    localStorage.removeItem('user');
   };
 
   return (
@@ -50,7 +53,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
 
 export const useAuth = () => {
   const context = useContext(AuthContext);
-  if (!context) {
+  if (context === undefined) {
     throw new Error('useAuth must be used within an AuthProvider');
   }
   return context;

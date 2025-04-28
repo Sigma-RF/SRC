@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import { ChevronRight, BookOpen, Lightbulb, GraduationCap, Users, Calendar, Microscope } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -7,17 +8,25 @@ function Home() {
     <main>
       {/* Hero Section */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <div className="text-center">
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="text-center"
+        >
           <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
             Bridging Academia and Industry
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
             A global research and innovation hub dedicated to democratizing research, supporting innovation, and training the next generation of researchers.
           </p>
-          <Link to="/register" className="bg-blue-600 text-white px-8 py-3 rounded-full font-medium hover:bg-blue-700 transition-colors flex items-center mx-auto inline-flex">
+          <Link 
+            to="/apply"
+            className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-8 py-3 rounded-xl font-medium hover:from-blue-700 hover:to-blue-800 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center mx-auto inline-flex"
+          >
             Join Our Program <ChevronRight className="ml-2 h-5 w-5" />
           </Link>
-        </div>
+        </motion.div>
       </section>
 
       {/* Services Section */}
@@ -93,37 +102,18 @@ function Home() {
               description="Build a portfolio of research projects and publications"
             />
           </div>
-          <div className="text-center mt-12">
-            <Link to="/register" className="bg-blue-600 text-white px-8 py-3 rounded-full font-medium hover:bg-blue-700 transition-colors inline-flex items-center">
+          <motion.div 
+            className="text-center mt-12"
+            whileHover={{ scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
+          >
+            <Link 
+              to="/apply"
+              className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-8 py-3 rounded-xl font-medium hover:from-blue-700 hover:to-blue-800 transition-all duration-300 shadow-lg hover:shadow-xl inline-flex items-center"
+            >
               Start Your Journey <ChevronRight className="ml-2 h-5 w-5" />
             </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Contact Section */}
-      <section id="contact" className="bg-white py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">Contact Us</h2>
-          <div className="max-w-2xl mx-auto">
-            <form className="space-y-6">
-              <div>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-700">Name</label>
-                <input type="text" id="name" className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500" />
-              </div>
-              <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email</label>
-                <input type="email" id="email" className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500" />
-              </div>
-              <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700">Message</label>
-                <textarea id="message" rows={4} className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"></textarea>
-              </div>
-              <button type="submit" className="w-full bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors">
-                Send Message
-              </button>
-            </form>
-          </div>
+          </motion.div>
         </div>
       </section>
     </main>

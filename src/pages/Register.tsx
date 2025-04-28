@@ -1,19 +1,21 @@
 import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
+import { useAuth } from '../context/AuthContext';
 
 function Register() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const navigate = useNavigate();
+  const { signUp } = useAuth();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Frontend-only mock registration
-    if (email && password) {
+    try {
+      await signUp(email, password);
       navigate('/dashboard');
-    } else {
-      setError('Please fill in all fields');
+    } catch (err) {
+      setError('Registration failed');
     }
   };
 
