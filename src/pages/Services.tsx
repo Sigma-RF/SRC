@@ -5,49 +5,49 @@ import { BookOpen, Code, Database, Brain, FileCheck, Users, Microscope, Graduati
 function Services() {
   const services = [
     {
-      icon: <BookOpen className="h-8 w-8 text-blue-600" />,
+      icon: <BookOpen className="h-8 w-8 text-red-600" />,
       title: "Research Paper Writing",
       description: "Expert assistance in writing and publishing research papers in high-impact journals",
       features: ["Journal Selection", "Paper Structure", "Review Support", "Publication Guidance"]
     },
     {
-      icon: <Code className="h-8 w-8 text-blue-600" />,
+      icon: <Code className="h-8 w-8 text-orange-500" />,
       title: "Technical Consulting",
       description: "Specialized consulting services for technical research and development",
       features: ["Architecture Review", "Code Analysis", "Performance Optimization", "Best Practices"]
     },
     {
-      icon: <Database className="h-8 w-8 text-blue-600" />,
+      icon: <Database className="h-8 w-8 text-red-600" />,
       title: "Data Analysis",
       description: "Comprehensive data analysis and visualization services",
       features: ["Statistical Analysis", "Data Mining", "Visualization", "Reporting"]
     },
     {
-      icon: <Brain className="h-8 w-8 text-blue-600" />,
+      icon: <Brain className="h-8 w-8 text-orange-500" />,
       title: "AI & ML Solutions",
       description: "Custom AI and machine learning solutions for research projects",
       features: ["Model Development", "Training", "Deployment", "Optimization"]
     },
     {
-      icon: <FileCheck className="h-8 w-8 text-blue-600" />,
+      icon: <FileCheck className="h-8 w-8 text-red-600" />,
       title: "Patent Filing",
       description: "Complete patent filing and intellectual property protection services",
       features: ["Patent Search", "Documentation", "Filing Process", "Legal Support"]
     },
     {
-      icon: <Users className="h-8 w-8 text-blue-600" />,
+      icon: <Users className="h-8 w-8 text-orange-500" />,
       title: "Research Training",
       description: "Comprehensive research methodology and tools training",
       features: ["Methodology", "Tools", "Best Practices", "Hands-on Projects"]
     },
     {
-      icon: <Microscope className="h-8 w-8 text-blue-600" />,
+      icon: <Microscope className="h-8 w-8 text-red-600" />,
       title: "Laboratory Services",
       description: "Access to advanced laboratory facilities and equipment",
       features: ["Equipment Access", "Technical Support", "Data Collection", "Analysis"]
     },
     {
-      icon: <GraduationCap className="h-8 w-8 text-blue-600" />,
+      icon: <GraduationCap className="h-8 w-8 text-orange-500" />,
       title: "Academic Support",
       description: "Academic writing and research support services",
       features: ["Literature Review", "Methodology", "Analysis", "Publication"]
@@ -77,7 +77,7 @@ function Services() {
               transition={{ delay: index * 0.1 }}
               className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow"
             >
-              <div className="bg-blue-50 w-16 h-16 rounded-lg flex items-center justify-center mb-4">
+              <div className="bg-red-50 w-16 h-16 rounded-lg flex items-center justify-center mb-4">
                 {service.icon}
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">{service.title}</h3>
@@ -85,7 +85,7 @@ function Services() {
               <ul className="space-y-2">
                 {service.features.map((feature, featureIndex) => (
                   <li key={featureIndex} className="text-gray-500 text-sm flex items-center">
-                    <span className="w-1.5 h-1.5 bg-blue-600 rounded-full mr-2"></span>
+                    <span className="w-1.5 h-1.5 bg-red-600 rounded-full mr-2"></span>
                     {feature}
                   </li>
                 ))}
@@ -94,7 +94,7 @@ function Services() {
           ))}
         </div>
 
-        <div className="mt-20 bg-gradient-to-r from-blue-600 to-blue-700 rounded-xl p-8 text-white">
+        <div className="mt-20 bg-gradient-to-r from-red-600 to-orange-500 rounded-xl p-8 text-white">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-4">Need Custom Services?</h2>
             <p className="text-lg mb-8">
@@ -104,7 +104,7 @@ function Services() {
               href="#contact"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-white text-blue-600 px-8 py-3 rounded-lg font-medium hover:bg-blue-50 transition-colors inline-block"
+              className="bg-white text-red-600 px-8 py-3 rounded-lg font-medium hover:bg-red-50 transition-colors inline-block"
             >
               Get in Touch
             </motion.a>

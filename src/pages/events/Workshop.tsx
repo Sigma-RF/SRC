@@ -92,7 +92,7 @@ function Workshop() {
                   <motion.button
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
-                    className="w-full bg-gradient-to-r from-blue-600 to-blue-700 text-white px-4 py-2 rounded-lg hover:from-blue-700 hover:to-blue-800 transition-all duration-300 flex items-center justify-center"
+                    className="w-full bg-gradient-to-r from-red-600 to-orange-500 text-white px-4 py-2 rounded-lg hover:from-red-700 hover:to-orange-600 transition-all duration-300 flex items-center justify-center"
                   >
                     Register Now
                     <ChevronRight className="ml-2 h-5 w-5" />
@@ -112,8 +112,8 @@ function Workshop() {
                 onClick={() => setSelectedMonth(index)}
                 className={`px-4 py-2 rounded-lg whitespace-nowrap ${
                   selectedMonth === index
-                    ? 'bg-blue-600 text-white'
-                    : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+                    ? 'bg-gradient-to-r from-red-600 to-orange-500 text-white'
+                    : 'bg-gray-100 text-gray-600 hover:bg-red-50'
                 }`}
               >
                 {month}
@@ -153,7 +153,7 @@ function Workshop() {
           </div>
         </div>
 
-        <div className="mt-16 bg-gradient-to-r from-blue-600 to-blue-700 rounded-xl p-8 text-white">
+        <div className="mt-16 bg-gradient-to-r from-red-600 to-orange-500 rounded-xl p-8 text-white">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-4">Want to Conduct a Workshop?</h2>
             <p className="text-lg mb-8">
@@ -162,7 +162,7 @@ function Workshop() {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-white text-blue-600 px-8 py-3 rounded-lg font-medium hover:bg-blue-50 transition-colors"
+              className="bg-white text-red-600 px-8 py-3 rounded-lg font-medium hover:bg-red-50 transition-colors"
             >
               Submit Proposal
             </motion.button>

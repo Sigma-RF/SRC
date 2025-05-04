@@ -1,0 +1,6 @@
+# SQLite database
+database.sqlite
+*.sqlite-journal
+
+# Google Cloud credentials
+credentials.json

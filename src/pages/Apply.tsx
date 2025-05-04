@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { ChevronRight, Brain, Code, Database, Microscope, FileText, FlaskRound as Flask, Cpu, Network } from 'lucide-react';
+import { ChevronRight, Brain, Code, Database, FileText, FlaskRound as Flask, Cpu, Network } from 'lucide-react';
 
 function Apply() {
   const [selectedField, setSelectedField] = useState('');
@@ -27,7 +27,7 @@ function Apply() {
     },
     {
       id: 'biotech',
-      icon: <Microscope className="h-6 w-6" />,
+      icon: <FileText className="h-6 w-6" />,
       title: 'Biotechnology',
       description: 'Genetic Engineering, Molecular Biology',
     },
@@ -95,18 +95,18 @@ function Apply() {
                 onClick={() => handleFieldSelect(field.id)}
                 className={`p-6 rounded-xl text-left transition-all ${
                   selectedField === field.id
-                    ? 'bg-blue-600 text-white shadow-xl'
-                    : 'bg-white hover:bg-blue-50 shadow-lg'
+                    ? 'bg-gradient-to-r from-red-600 to-orange-500 text-white shadow-xl'
+                    : 'bg-white hover:bg-red-50 shadow-lg'
                 }`}
               >
                 <div className={`p-3 rounded-lg inline-block mb-4 ${
-                  selectedField === field.id ? 'bg-blue-500' : 'bg-blue-100'
+                  selectedField === field.id ? 'bg-red-500' : 'bg-red-100'
                 }`}>
                   {field.icon}
                 </div>
                 <h3 className="text-lg font-semibold mb-2">{field.title}</h3>
                 <p className={`text-sm ${
-                  selectedField === field.id ? 'text-blue-100' : 'text-gray-600'
+                  selectedField === field.id ? 'text-red-100' : 'text-gray-600'
                 }`}>
                   {field.description}
                 </p>
@@ -129,7 +129,7 @@ function Apply() {
                 <input
                   type="text"
                   required
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent"
                 />
               </div>
 
@@ -140,7 +140,7 @@ function Apply() {
                 <input
                   type="email"
                   required
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent"
                 />
               </div>
 
@@ -150,7 +150,7 @@ function Apply() {
                 </label>
                 <select
                   required
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent"
                 >
                   <option value="">Select your education level</option>
                   <option value="bachelors">Bachelor's Degree</option>
@@ -167,7 +167,7 @@ function Apply() {
                 <textarea
                   required
                   rows={4}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent"
                   placeholder="Briefly describe your research experience..."
                 />
               </div>
@@ -176,7 +176,7 @@ function Apply() {
                 <button
                   type="button"
                   onClick={() => setStep(1)}
-                  className="text-blue-600 hover:text-blue-700"
+                  className="text-red-600 hover:text-red-700"
                 >
                   ← Back to Fields
                 </button>
@@ -184,7 +184,7 @@ function Apply() {
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                   type="submit"
-                  className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-8 py-3 rounded-xl hover:from-blue-700 hover:to-blue-800 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center"
+                  className="bg-gradient-to-r from-red-600 to-orange-500 text-white px-8 py-3 rounded-xl hover:from-red-700 hover:to-orange-600 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center"
                 >
                   Submit Application
                   <ChevronRight className="ml-2 h-5 w-5" />
@@ -194,22 +194,22 @@ function Apply() {
           </motion.div>
         )}
 
-        <div className="mt-16 bg-blue-50 rounded-xl p-8">
+        <div className="mt-16 bg-red-50 rounded-xl p-8">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">Application Process</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="bg-white p-6 rounded-lg shadow">
-                <div className="text-blue-600 font-bold text-xl mb-2">01</div>
+                <div className="text-red-600 font-bold text-xl mb-2">01</div>
                 <h3 className="font-semibold mb-2">Select Field</h3>
                 <p className="text-gray-600 text-sm">Choose your research area of interest</p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow">
-                <div className="text-blue-600 font-bold text-xl mb-2">02</div>
+                <div className="text-orange-600 font-bold text-xl mb-2">02</div>
                 <h3 className="font-semibold mb-2">Submit Application</h3>
                 <p className="text-gray-600 text-sm">Fill out the application form with your details</p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow">
-                <div className="text-blue-600 font-bold text-xl mb-2">03</div>
+                <div className="text-red-600 font-bold text-xl mb-2">03</div>
                 <h3 className="font-semibold mb-2">Interview</h3>
                 <p className="text-gray-600 text-sm">Selected candidates will be invited for an interview</p>
               </div>

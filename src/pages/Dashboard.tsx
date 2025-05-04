@@ -1,7 +1,7 @@
 import React from 'react';
 import { Routes, Route, Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
-import { LayoutDashboard, FileText, Award, Calendar, LogOut, ChevronRight } from 'lucide-react';
+import { LayoutDashboard, FileText, Award, Calendar, LogOut } from 'lucide-react';
 
 function Dashboard() {
   const { user, signOut } = useAuth();
@@ -26,7 +26,7 @@ function Dashboard() {
               <span className="text-gray-700 mr-4">{user?.email}</span>
               <button
                 onClick={handleSignOut}
-                className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700"
+                className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-gradient-to-r from-red-600 to-orange-500 hover:from-red-700 hover:to-orange-600"
               >
                 <LogOut className="h-4 w-4 mr-2" />
                 Sign out
@@ -43,25 +43,25 @@ function Dashboard() {
               title="Project Status"
               value="In Progress"
               description="Current research project phase"
-              icon={<LayoutDashboard className="h-6 w-6 text-blue-600" />}
+              icon={<LayoutDashboard className="h-6 w-6 text-red-600" />}
             />
             <DashboardCard
               title="Publications"
               value="2"
               description="Research papers published"
-              icon={<FileText className="h-6 w-6 text-blue-600" />}
+              icon={<FileText className="h-6 w-6 text-orange-600" />}
             />
             <DashboardCard
               title="Certifications"
               value="3"
               description="Completed certifications"
-              icon={<Award className="h-6 w-6 text-blue-600" />}
+              icon={<Award className="h-6 w-6 text-red-600" />}
             />
             <DashboardCard
               title="Upcoming Events"
               value="4"
               description="Events this month"
-              icon={<Calendar className="h-6 w-6 text-blue-600" />}
+              icon={<Calendar className="h-6 w-6 text-orange-600" />}
             />
           </div>
 
@@ -106,7 +106,7 @@ function Dashboard() {
                       <h4 className="text-sm font-medium text-gray-900">{event.title}</h4>
                       <p className="text-sm text-gray-500">{event.date}</p>
                     </div>
-                    <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800">
+                    <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-100 text-red-800">
                       {event.type}
                     </span>
                   </div>
@@ -148,7 +148,7 @@ function ProjectCard({ title, progress, dueDate, status }: { title: string; prog
     <div className="bg-gray-50 p-4 rounded-lg">
       <div className="flex justify-between items-start mb-2">
         <h4 className="text-sm font-medium text-gray-900">{title}</h4>
-        <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800">
+        <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-100 text-red-800">
           {status}
         </span>
       </div>
@@ -160,7 +160,7 @@ function ProjectCard({ title, progress, dueDate, status }: { title: string; prog
         <div className="overflow-hidden h-2 text-xs flex rounded bg-gray-200">
           <div
             style={{ width: `${progress}%` }}
-            className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-blue-600"
+            className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-gradient-to-r from-red-600 to-orange-500"
           ></div>
         </div>
       </div>

@@ -23,8 +23,8 @@ function Contact() {
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Contact Information</h2>
               <div className="space-y-6">
                 <div className="flex items-start">
-                  <div className="bg-blue-100 p-3 rounded-lg">
-                    <MapPin className="h-6 w-6 text-blue-600" />
+                  <div className="bg-red-50 p-3 rounded-lg">
+                    <MapPin className="h-6 w-6 text-red-600" />
                   </div>
                   <div className="ml-4">
                     <h3 className="text-lg font-semibold text-gray-900">Address</h3>
@@ -32,8 +32,8 @@ function Contact() {
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <div className="bg-blue-100 p-3 rounded-lg">
-                    <Phone className="h-6 w-6 text-blue-600" />
+                  <div className="bg-orange-50 p-3 rounded-lg">
+                    <Phone className="h-6 w-6 text-orange-600" />
                   </div>
                   <div className="ml-4">
                     <h3 className="text-lg font-semibold text-gray-900">Phone</h3>
@@ -41,8 +41,8 @@ function Contact() {
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <div className="bg-blue-100 p-3 rounded-lg">
-                    <Mail className="h-6 w-6 text-blue-600" />
+                  <div className="bg-red-50 p-3 rounded-lg">
+                    <Mail className="h-6 w-6 text-red-600" />
                   </div>
                   <div className="ml-4">
                     <h3 className="text-lg font-semibold text-gray-900">Email</h3>
@@ -50,8 +50,8 @@ function Contact() {
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <div className="bg-blue-100 p-3 rounded-lg">
-                    <Clock className="h-6 w-6 text-blue-600" />
+                  <div className="bg-orange-50 p-3 rounded-lg">
+                    <Clock className="h-6 w-6 text-orange-600" />
                   </div>
                   <div className="ml-4">
                     <h3 className="text-lg font-semibold text-gray-900">Working Hours</h3>
@@ -63,13 +63,13 @@ function Contact() {
               <div className="mt-8 pt-8 border-t border-gray-200">
                 <h3 className="text-lg font-semibold text-gray-900 mb-4">Follow Us</h3>
                 <div className="flex space-x-4">
-                  <a href="#" className="bg-blue-100 p-3 rounded-lg text-blue-600 hover:bg-blue-200 transition-colors">
+                  <a href="#" className="bg-red-50 p-3 rounded-lg text-red-600 hover:bg-red-100 transition-colors">
                     <Linkedin className="h-6 w-6" />
                   </a>
-                  <a href="#" className="bg-blue-100 p-3 rounded-lg text-blue-600 hover:bg-blue-200 transition-colors">
+                  <a href="#" className="bg-orange-50 p-3 rounded-lg text-orange-600 hover:bg-orange-100 transition-colors">
                     <Github className="h-6 w-6" />
                   </a>
-                  <a href="#" className="bg-blue-100 p-3 rounded-lg text-blue-600 hover:bg-blue-200 transition-colors">
+                  <a href="#" className="bg-red-50 p-3 rounded-lg text-red-600 hover:bg-red-100 transition-colors">
                     <Youtube className="h-6 w-6" />
                   </a>
                 </div>
@@ -88,7 +88,7 @@ function Contact() {
                   <input
                     type="text"
                     id="name"
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent"
                     required
                   />
                 </div>
@@ -100,7 +100,7 @@ function Contact() {
                   <input
                     type="email"
                     id="email"
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent"
                     required
                   />
                 </div>
@@ -112,7 +112,7 @@ function Contact() {
                   <input
                     type="text"
                     id="subject"
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent"
                     required
                   />
                 </div>
@@ -124,14 +124,14 @@ function Contact() {
                   <textarea
                     id="message"
                     rows={6}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent"
                     required
                   ></textarea>
                 </div>
 
                 <button
                   type="submit"
-                  className="w-full bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 py-3 rounded-xl hover:from-blue-700 hover:to-blue-800 transition-all duration-300 shadow-lg hover:shadow-xl font-medium"
+                  className="w-full bg-gradient-to-r from-red-600 to-orange-500 text-white px-6 py-3 rounded-xl hover:from-red-700 hover:to-orange-600 transition-all duration-300 shadow-lg hover:shadow-xl font-medium"
                 >
                   Send Message
                 </button>

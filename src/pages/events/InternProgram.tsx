@@ -49,7 +49,7 @@ function InternProgram() {
               transition={{ delay: index * 0.1 }}
               className="bg-white p-6 rounded-xl shadow-lg"
             >
-              <div className="bg-blue-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4 text-blue-600">
+              <div className="bg-red-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4 text-red-600">
                 {feature.icon}
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">{feature.title}</h3>
@@ -62,8 +62,8 @@ function InternProgram() {
           <h2 className="text-2xl font-bold text-gray-900 mb-6">Program Structure</h2>
           <div className="space-y-4">
             <div className="flex items-start">
-              <div className="bg-blue-100 p-2 rounded-lg mr-4">
-                <span className="text-blue-600 font-bold">01</span>
+              <div className="bg-red-100 p-2 rounded-lg mr-4">
+                <span className="text-red-600 font-bold">01</span>
               </div>
               <div>
                 <h3 className="text-lg font-semibold mb-2">Foundation Phase</h3>
@@ -71,8 +71,8 @@ function InternProgram() {
               </div>
             </div>
             <div className="flex items-start">
-              <div className="bg-blue-100 p-2 rounded-lg mr-4">
-                <span className="text-blue-600 font-bold">02</span>
+              <div className="bg-orange-100 p-2 rounded-lg mr-4">
+                <span className="text-orange-600 font-bold">02</span>
               </div>
               <div>
                 <h3 className="text-lg font-semibold mb-2">Project Phase</h3>
@@ -80,8 +80,8 @@ function InternProgram() {
               </div>
             </div>
             <div className="flex items-start">
-              <div className="bg-blue-100 p-2 rounded-lg mr-4">
-                <span className="text-blue-600 font-bold">03</span>
+              <div className="bg-red-100 p-2 rounded-lg mr-4">
+                <span className="text-red-600 font-bold">03</span>
               </div>
               <div>
                 <h3 className="text-lg font-semibold mb-2">Publication Phase</h3>
@@ -96,7 +96,7 @@ function InternProgram() {
             href="/apply"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="inline-flex items-center bg-gradient-to-r from-blue-600 to-blue-700 text-white px-8 py-3 rounded-xl hover:from-blue-700 hover:to-blue-800 transition-all duration-300 shadow-lg hover:shadow-xl"
+            className="inline-flex items-center bg-gradient-to-r from-red-600 to-orange-500 text-white px-8 py-3 rounded-xl hover:from-red-700 hover:to-orange-600 transition-all duration-300 shadow-lg hover:shadow-xl"
           >
             Apply Now <ChevronRight className="ml-2 h-5 w-5" />
           </motion.a>

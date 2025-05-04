@@ -81,8 +81,8 @@ function Projects() {
                   <h3 className="text-xl font-semibold text-gray-900">{project.title}</h3>
                   <span className={`px-3 py-1 rounded-full text-sm font-medium ${
                     project.status === 'Completed' ? 'bg-green-100 text-green-800' :
-                    project.status === 'Ongoing' ? 'bg-blue-100 text-blue-800' :
-                    'bg-yellow-100 text-yellow-800'
+                    project.status === 'Ongoing' ? 'bg-red-100 text-red-800' :
+                    'bg-orange-100 text-orange-800'
                   }`}>
                     {project.status}
                   </span>
@@ -101,7 +101,7 @@ function Projects() {
                 <div className="space-y-2">
                   {project.achievements.map((achievement, i) => (
                     <div key={i} className="flex items-center text-gray-600">
-                      <Award className="h-4 w-4 mr-2 text-blue-600" />
+                      <Award className="h-4 w-4 mr-2 text-red-600" />
                       <span>{achievement}</span>
                     </div>
                   ))}
@@ -110,7 +110,7 @@ function Projects() {
                   <motion.button
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
-                    className="w-full bg-gradient-to-r from-blue-600 to-blue-700 text-white px-4 py-2 rounded-lg hover:from-blue-700 hover:to-blue-800 transition-all duration-300 flex items-center justify-center"
+                    className="w-full bg-gradient-to-r from-red-600 to-orange-500 text-white px-4 py-2 rounded-lg hover:from-red-700 hover:to-orange-600 transition-all duration-300 flex items-center justify-center"
                   >
                     Learn More
                     <ExternalLink className="h-4 w-4 ml-2" />
@@ -121,7 +121,7 @@ function Projects() {
           ))}
         </div>
 
-        <div className="mt-20 bg-gradient-to-r from-blue-600 to-blue-700 rounded-xl p-8 text-white">
+        <div className="mt-20 bg-gradient-to-r from-red-600 to-orange-500 rounded-xl p-8 text-white">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-4">Interested in Our Research?</h2>
             <p className="text-lg mb-8">
@@ -131,7 +131,7 @@ function Projects() {
               href="/apply"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-white text-blue-600 px-8 py-3 rounded-lg font-medium hover:bg-blue-50 transition-colors inline-block"
+              className="bg-white text-red-600 px-8 py-3 rounded-lg font-medium hover:bg-red-50 transition-colors inline-block"
             >
               Apply Now
             </motion.a>

@@ -24,7 +24,7 @@ function Events() {
             animate={{ opacity: 1, x: 0 }}
             className="bg-white rounded-xl shadow-lg overflow-hidden"
           >
-            <div className="h-48 bg-gradient-to-r from-blue-600 to-blue-700 flex items-center justify-center">
+            <div className="h-48 bg-gradient-to-r from-red-600 to-orange-500 flex items-center justify-center">
               <GraduationCap className="h-20 w-20 text-white" />
             </div>
             <div className="p-6">
@@ -34,7 +34,7 @@ function Events() {
               </p>
               <Link
                 to="/events/intern-program"
-                className="inline-flex items-center text-blue-600 hover:text-blue-700"
+                className="inline-flex items-center text-red-600 hover:text-red-700"
               >
                 Learn More <ChevronRight className="h-5 w-5 ml-1" />
               </Link>
@@ -46,7 +46,7 @@ function Events() {
             animate={{ opacity: 1, x: 0 }}
             className="bg-white rounded-xl shadow-lg overflow-hidden"
           >
-            <div className="h-48 bg-gradient-to-r from-blue-600 to-blue-700 flex items-center justify-center">
+            <div className="h-48 bg-gradient-to-r from-red-600 to-orange-500 flex items-center justify-center">
               <Calendar className="h-20 w-20 text-white" />
             </div>
             <div className="p-6">
@@ -56,7 +56,7 @@ function Events() {
               </p>
               <Link
                 to="/events/workshop"
-                className="inline-flex items-center text-blue-600 hover:text-blue-700"
+                className="inline-flex items-center text-red-600 hover:text-red-700"
               >
                 View Schedule <ChevronRight className="h-5 w-5 ml-1" />
               </Link>

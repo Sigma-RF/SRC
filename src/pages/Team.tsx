@@ -5,21 +5,21 @@ import { Linkedin, Mail } from 'lucide-react';
 function Team() {
   const team = [
     {
-      name: "Dr. Sarah Johnson",
-      role: "Research Director",
-      image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
-      linkedin: "#",
-      email: "sarah@example.com"
+      name: "Mr. Mukarram Bambot",
+      role: "Cheif Executer & Officer",
+      image: "./assets/MB.jpg",
+      linkedin: "www.linkedin.com/in/mukarram-bambot-386452282",
+      email: "MukBambot118@gmail.com"
     },
     {
-      name: "Dr. Michael Chen",
-      role: "Senior Researcher",
+      name: "Dr. Cleven Michael Raj",
+      role: "Co-Founder & Cheif Executer",
       image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
       linkedin: "#",
-      email: "michael@example.com"
+      email: "clevenmichaelraj@gmail.com"
     },
     {
-      name: "Dr. Emily Brown",
+      name: "Dr. ",
       role: "AI Research Lead",
       image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
       linkedin: "#",
@@ -63,7 +63,7 @@ function Team() {
                 <div className="flex space-x-4">
                   <a
                     href={member.linkedin}
-                    className="text-blue-600 hover:text-blue-700"
+                    className="text-red-600 hover:text-red-700"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -71,7 +71,7 @@ function Team() {
                   </a>
                   <a
                     href={`mailto:${member.email}`}
-                    className="text-blue-600 hover:text-blue-700"
+                    className="text-orange-500 hover:text-orange-600"
                   >
                     <Mail className="h-5 w-5" />
                   </a>
@@ -81,7 +81,7 @@ function Team() {
           ))}
         </div>
 
-        <div className="mt-20 bg-gradient-to-r from-blue-600 to-blue-700 rounded-xl p-8 text-white">
+        <div className="mt-20 bg-gradient-to-r from-red-600 to-orange-500 rounded-xl p-8 text-white">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-4">Join Our Team</h2>
             <p className="text-lg mb-8">
@@ -90,7 +90,7 @@ function Team() {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-white text-blue-600 px-8 py-3 rounded-lg font-medium hover:bg-blue-50 transition-colors"
+              className="bg-white text-red-600 px-8 py-3 rounded-lg font-medium hover:bg-red-50 transition-colors"
               onClick={() => window.location.href = '/apply'}
             >
               View Open Positions

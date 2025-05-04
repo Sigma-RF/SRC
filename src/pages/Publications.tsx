@@ -60,13 +60,13 @@ function Publications() {
                   <p className="text-gray-500">{pub.journal} • {pub.year}</p>
                 </div>
                 <div className="flex items-center space-x-4">
-                  <div className="flex items-center text-blue-600">
+                  <div className="flex items-center text-red-600">
                     <Award className="h-5 w-5 mr-1" />
                     <span>IF: {pub.impact}</span>
                   </div>
                   <a
                     href={pub.link}
-                    className="text-blue-600 hover:text-blue-700"
+                    className="text-orange-500 hover:text-orange-600"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -82,15 +82,15 @@ function Publications() {
           <h2 className="text-2xl font-bold text-gray-900 mb-8 text-center">Citation Metrics</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white p-6 rounded-xl shadow-lg text-center">
-              <div className="text-3xl font-bold text-blue-600 mb-2">150+</div>
+              <div className="text-3xl font-bold text-red-600 mb-2">150+</div>
               <div className="text-gray-600">Total Citations</div>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-lg text-center">
-              <div className="text-3xl font-bold text-blue-600 mb-2">25</div>
+              <div className="text-3xl font-bold text-orange-500 mb-2">25</div>
               <div className="text-gray-600">Publications</div>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-lg text-center">
-              <div className="text-3xl font-bold text-blue-600 mb-2">4.8</div>
+              <div className="text-3xl font-bold text-red-600 mb-2">4.8</div>
               <div className="text-gray-600">Average Impact Factor</div>
             </div>
           </div>

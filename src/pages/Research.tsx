@@ -5,32 +5,32 @@ import { FlaskRound as Flask, Brain, Database, Network, Cpu, Cloud } from 'lucid
 function Research() {
   const researchAreas = [
     {
-      icon: <Brain className="h-8 w-8 text-blue-600" />,
+      icon: <Brain className="h-8 w-8 text-red-600" />,
       title: "Artificial Intelligence",
       description: "Advanced research in machine learning, deep learning, and neural networks"
     },
     {
-      icon: <Database className="h-8 w-8 text-blue-600" />,
+      icon: <Database className="h-8 w-8 text-orange-500" />,
       title: "Big Data Analytics",
       description: "Data mining, predictive analytics, and business intelligence"
     },
     {
-      icon: <Network className="h-8 w-8 text-blue-600" />,
+      icon: <Network className="h-8 w-8 text-red-600" />,
       title: "Internet of Things",
       description: "Smart devices, sensor networks, and embedded systems"
     },
     {
-      icon: <Cpu className="h-8 w-8 text-blue-600" />,
+      icon: <Cpu className="h-8 w-8 text-orange-500" />,
       title: "Quantum Computing",
       description: "Quantum algorithms, cryptography, and quantum machine learning"
     },
     {
-      icon: <Cloud className="h-8 w-8 text-blue-600" />,
+      icon: <Cloud className="h-8 w-8 text-red-600" />,
       title: "Cloud Computing",
       description: "Distributed systems, cloud security, and scalable architectures"
     },
     {
-      icon: <Flask className="h-8 w-8 text-blue-600" />,
+      icon: <Flask className="h-8 w-8 text-orange-500" />,
       title: "Experimental Research",
       description: "Novel methodologies and innovative research approaches"
     }
@@ -59,7 +59,7 @@ function Research() {
               transition={{ delay: index * 0.1 }}
               className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow"
             >
-              <div className="bg-blue-50 w-16 h-16 rounded-lg flex items-center justify-center mb-4">
+              <div className="bg-red-50 w-16 h-16 rounded-lg flex items-center justify-center mb-4">
                 {area.icon}
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">{area.title}</h3>
@@ -68,7 +68,7 @@ function Research() {
           ))}
         </div>
 
-        <div className="mt-20 bg-gradient-to-r from-blue-600 to-blue-700 rounded-xl p-8 text-white">
+        <div className="mt-20 bg-gradient-to-r from-red-600 to-orange-500 rounded-xl p-8 text-white">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-4">Research Opportunities</h2>
             <p className="text-lg mb-8">
@@ -77,7 +77,7 @@ function Research() {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-white text-blue-600 px-8 py-3 rounded-lg font-medium hover:bg-blue-50 transition-colors"
+              className="bg-white text-red-600 px-8 py-3 rounded-lg font-medium hover:bg-red-50 transition-colors"
               onClick={() => window.location.href = '/apply'}
             >
               Apply for Research Position
