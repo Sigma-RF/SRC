@@ -38,7 +38,7 @@ function App() {
             <div className="flex justify-between items-center">
               <Link to="/" className="flex items-center space-x-2 md:space-x-3" onClick={closeMenu}>
                 <img 
-                  src="../assets/logo.png" 
+                  src="./logo.png" 
                   alt="Research Center Logo" 
                   className="w-8 h-8 md:w-10 md:h-10 rounded-full shadow-lg"
                 />
@@ -80,7 +80,7 @@ function App() {
                 <div className="flex justify-between items-center mb-8">
                   <Link to="/" className="flex items-center space-x-2" onClick={closeMenu}>
                     <img 
-                      src="src/assets/logo.png" 
+                      src="./logo.png"  
                       alt="Research Center Logo" 
                       className="w-8 h-8 rounded-full shadow-lg"
                     />
@@ -136,7 +136,7 @@ function App() {
               <div className="text-center md:text-left">
                 <div className="flex items-center justify-center md:justify-start space-x-2 mb-4">
                   <img 
-                    src="src/assets/logo.png" 
+                    src="./logo.png" 
                     alt="Research Center Logo" 
                     className="w-8 h-8 rounded-full shadow-lg"
                   />
