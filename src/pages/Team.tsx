@@ -7,7 +7,7 @@ function Team() {
     {
       name: "Mr. Mukarram Bambot",
       role: "Cheif Executer & Officer",
-      image: "./MB.jpg",
+      image: " ",
       linkedin: "www.linkedin.com/in/mukarram-bambot-386452282",
       email: "MukBambot118@gmail.com"
     },
