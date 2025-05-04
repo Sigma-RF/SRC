@@ -38,7 +38,7 @@ function App() {
             <div className="flex justify-between items-center">
               <Link to="/" className="flex items-center space-x-2 md:space-x-3" onClick={closeMenu}>
                 <img 
-                  src="src/assets/logo.png" 
+                  src="../assets/logo.png" 
                   alt="Research Center Logo" 
                   className="w-8 h-8 md:w-10 md:h-10 rounded-full shadow-lg"
                 />
