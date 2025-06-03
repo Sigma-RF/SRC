@@ -4,7 +4,6 @@ import { Github, Linkedin, Youtube, Mail, Phone, MapPin, Clock, Menu, X } from '
 import Home from './pages/Home';
 import Research from './pages/Research';
 import Publications from './pages/Publications';
-import Team from './pages/Team';
 import Services from './pages/Services';
 import Projects from './pages/Projects';
 import Apply from './pages/Apply';
@@ -59,7 +58,6 @@ function App() {
                 <Link to="/projects" className="nav-link text-gray-600 hover:text-red-600 transition-colors">Projects</Link>
                 <Link to="/events" className="nav-link text-gray-600 hover:text-red-600 transition-colors">Events</Link>
                 <Link to="/publications" className="nav-link text-gray-600 hover:text-red-600 transition-colors">Publications</Link>
-                <Link to="/team" className="nav-link text-gray-600 hover:text-red-600 transition-colors">Team</Link>
                 <Link to="/contact" className="nav-link text-gray-600 hover:text-red-600 transition-colors">Contact</Link>
                 <Link 
                   to="/apply"
@@ -100,7 +98,6 @@ function App() {
                   <Link to="/projects" className="mobile-touch-target text-gray-600 hover:text-red-600 transition-colors py-2" onClick={closeMenu}>Projects</Link>
                   <Link to="/events" className="mobile-touch-target text-gray-600 hover:text-red-600 transition-colors py-2" onClick={closeMenu}>Events</Link>
                   <Link to="/publications" className="mobile-touch-target text-gray-600 hover:text-red-600 transition-colors py-2" onClick={closeMenu}>Publications</Link>
-                  <Link to="/team" className="mobile-touch-target text-gray-600 hover:text-red-600 transition-colors py-2" onClick={closeMenu}>Team</Link>
                   <Link to="/contact" className="mobile-touch-target text-gray-600 hover:text-red-600 transition-colors py-2" onClick={closeMenu}>Contact</Link>
                   <Link 
                     to="/apply"
@@ -124,7 +121,6 @@ function App() {
           <Route path="/events/intern-program" element={<InternProgram />} />
           <Route path="/events/workshop" element={<Workshop />} />
           <Route path="/publications" element={<Publications />} />
-          <Route path="/team" element={<Team />} />
           <Route path="/apply" element={<Apply />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
