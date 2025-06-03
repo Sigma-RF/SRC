@@ -148,7 +148,7 @@ function App() {
                 <div className="space-y-2 text-sm">
                   <a href="mailto:contact@research-center.com" className="flex items-center justify-center md:justify-start text-gray-300 hover:text-white transition-colors">
                     <Mail className="h-4 w-4 mr-2" />
-                    contact@research-center.com
+                    sigmaresearchforum@gmail.com
                   </a>
                   <a href="tel:+918946098435" className="flex items-center justify-center md:justify-start text-gray-300 hover:text-white transition-colors">
                     <Phone className="h-4 w-4 mr-2" />
@@ -156,8 +156,7 @@ function App() {
                   </a>
                   <div className="flex items-center justify-center md:justify-start text-gray-300">
                     <MapPin className="h-4 w-4 mr-2" />
-                    123 Research Avenue, CHROMPET<br />
-                    Chennai, Tamil Nadu 600044
+                    CHROMPET
                   </div>
                 </div>
               </div>

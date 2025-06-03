@@ -28,7 +28,7 @@ function Contact() {
                   </div>
                   <div className="ml-4">
                     <h3 className="text-lg font-semibold text-gray-900">Address</h3>
-                    <p className="text-gray-600">123 Research Avenue<br />CHROMPET<br />Chennai, Tamil Nadu 600044</p>
+                    <p className="text-gray-600">CHROMPET</p>
                   </div>
                 </div>
                 <div className="flex items-start">
@@ -46,7 +46,7 @@ function Contact() {
                   </div>
                   <div className="ml-4">
                     <h3 className="text-lg font-semibold text-gray-900">Email</h3>
-                    <p className="text-gray-600">contact@sigmaresearch.com</p>
+                    <p className="text-gray-600">sigmaresearchforum@gmail.com</p>
                   </div>
                 </div>
                 <div className="flex items-start">
