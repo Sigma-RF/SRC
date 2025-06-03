@@ -154,6 +154,11 @@ function App() {
                     <Phone className="h-4 w-4 mr-2" />
                     +91 89460 98435
                   </a>
+                  <div className="flex items-center justify-center md:justify-start text-gray-300">
+                    <MapPin className="h-4 w-4 mr-2" />
+                    123 Research Avenue, CHROMPET<br />
+                    Chennai, Tamil Nadu 600044
+                  </div>
                 </div>
               </div>
 

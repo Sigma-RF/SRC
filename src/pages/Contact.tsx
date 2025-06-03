@@ -28,7 +28,7 @@ function Contact() {
                   </div>
                   <div className="ml-4">
                     <h3 className="text-lg font-semibold text-gray-900">Address</h3>
-                    <p className="text-gray-600">123 Research Avenue<br />Innovation District<br />Tech City, 12345</p>
+                    <p className="text-gray-600">123 Research Avenue<br />CHROMPET<br />Chennai, Tamil Nadu 600044</p>
                   </div>
                 </div>
                 <div className="flex items-start">
@@ -37,7 +37,7 @@ function Contact() {
                   </div>
                   <div className="ml-4">
                     <h3 className="text-lg font-semibold text-gray-900">Phone</h3>
-                    <p className="text-gray-600">+1 (234) 567-8900</p>
+                    <p className="text-gray-600">+91 89460 98435</p>
                   </div>
                 </div>
                 <div className="flex items-start">
