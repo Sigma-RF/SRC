@@ -150,9 +150,9 @@ function App() {
                     <Mail className="h-4 w-4 mr-2" />
                     contact@research-center.com
                   </a>
-                  <a href="tel:+1234567890" className="flex items-center justify-center md:justify-start text-gray-300 hover:text-white transition-colors">
+                  <a href="tel:+918946098435" className="flex items-center justify-center md:justify-start text-gray-300 hover:text-white transition-colors">
                     <Phone className="h-4 w-4 mr-2" />
-                    +1 (234) 567-8900
+                    +91 89460 98435
                   </a>
                 </div>
               </div>
